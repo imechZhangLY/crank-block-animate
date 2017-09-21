@@ -1,0 +1,114 @@
+.foundation{
+	position: absolute;
+	left: 20.5vw;
+	top: 15.5vw;
+	height: 4vw;
+	width: 4vw;
+	background-color: rgb(100,100,100);
+	border-radius: 2vw 2vw 0px 0px;
+}
+.circle{
+	width: 1.6vw;
+	height: 1.6vw;
+	border-radius: 0.8vw;
+	background-color: red;
+}
+#first{
+	position: absolute;
+	left: 21.7vw;
+	top: 16.7vw;
+}
+.bar{
+	height: 2vw;
+	border-radius: 1vw;
+	background-color: blue;
+	border:1px solid black;
+}
+#crank{
+	width: 18vw;
+	position: absolute;
+	left: 21.5vw;
+	top: 16.5vw;
+	transform-origin: 1vw;
+}
+#link{
+	width: 30vw;
+	position: absolute;
+	left: 37.5vw;
+	top: 16.5vw;
+	transform-origin: 29vw;
+}
+#second{
+	position: absolute;
+	left: 37.7vw;
+	top: 16.7vw;
+	transform-origin: -15.2vw;
+}
+#third{
+	position: absolute;
+	left: 65.7vw;
+	top: 16.7vw;
+}
+.block{
+	width: 5vw;
+	height: 4vw;
+	background-color: rgb(100,100,100);
+	position: absolute;
+	left: 64vw;
+	top: 15.5vw;
+}
+.animate{
+	animation: 4s rotation linear infinite;
+}
+@keyframes rotation{
+	from {transform: rotate(0deg);}
+	to { transform: rotate(-360deg); }
+}
+.animate-link-rotate{animation: 4s link-rotate linear infinite;}
+@keyframes link-rotate {
+	0%{transform: rotate( 0deg);}
+	5%{transform: rotate(10deg);}
+	10%{transform: rotate(20deg);}
+	15%{transform: rotate(28deg);}
+	20%{transform: rotate(33deg);}
+	25%{transform: rotate(35deg);}
+	30%{transform: rotate(33deg);}
+	35%{transform: rotate(28deg);}
+	40%{transform: rotate(20deg);}
+	45%{transform: rotate(10deg);}
+	50%{transform: rotate( 0deg);}
+	55%{transform: rotate(-10deg);}
+	60%{transform: rotate(-20deg);}
+	65%{transform: rotate(-28deg);}
+	70%{transform: rotate(-33deg);}
+	75%{transform: rotate(-35deg);}
+	80%{transform: rotate(-33deg);}
+	85%{transform: rotate(-28deg);}
+	90%{transform: rotate(-20deg);}
+	95%{transform: rotate(-10deg);}
+	100%{transform: rotate(-0deg);}
+}
+.animate-block-translate{animation: 4s blocks-translate linear infinite;}
+@keyframes blocks-translate {
+	0%{transform: translate(0.00vw);}
+	5%{transform: translate(-1.22vw);}
+	10%{transform: translate(-4.68vw);}
+	15%{transform: translate(-9.77vw);}
+	20%{transform: translate(-15.55vw);}
+	25%{transform: translate(-21.02vw);}
+	30%{transform: translate(-25.44vw);}
+	35%{transform: translate(-28.58vw);}
+	40%{transform: translate(-30.57vw);}
+	45%{transform: translate(-31.66vw);}
+	50%{transform: translate(-32.00vw);}
+	55%{transform: translate(-31.66vw);}
+	60%{transform: translate(-30.57vw);}
+	65%{transform: translate(-28.58vw);}
+	70%{transform: translate(-25.44vw);}
+	75%{transform: translate(-21.02vw);}
+	80%{transform: translate(-15.55vw);}
+	85%{transform: translate(-9.77vw);}
+	90%{transform: translate(-4.68vw);}
+	95%{transform: translate(-1.22vw);}
+	100%{transform: translate(0.00vw);}
+}
