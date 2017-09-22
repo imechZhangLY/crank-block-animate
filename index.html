@@ -8,29 +8,9 @@
 	<div class="foundation"></div>
 	<div class="bar animate" id="crank"></div>
 	<div class="circle" id="first"></div>
-	<div class="block animate-block-translate"></div>
-	<div class="bar animate-link-rotate" id="link"></div>
+	<div class="block animate-blocks"></div>
+	<div class="bar animate-link" id="link"></div>
 	<div class="circle animate" id="second"></div>
-	<div class="circle animate-block-translate" id="third"></div>
+	<div class="circle animate-blocks" id="third"></div>
 </body>
 </html>
-<script type="text/javascript">
-	var offsetX = []
-	var theta
-	var l1 = 16
-	var l2 = 28
-	var animationInterval = 4000 //ms，要和css文件中设置的相同
-	var steps = 1000 //离散的步数
-	for(var i = 0; i < steps + 1; i++){
-		theta = i * 2 * Math.PI / steps
-		offsetX.push(l1 * Math.cos(theta) +Math.sqrt(l1**2 * Math.cos(theta)**2 +  l2**2 - l1**2) - l1 - l2)
-	}
-	var link = document.getElementById('link');
-	var i = 1
-	setInterval(function(){
-		i = i%steps
-		console.log(i)
-		link.style.left = 37.5 + offsetX[i] + 'vw'
-		i++
-	},animationInterval / steps)
-</script>
