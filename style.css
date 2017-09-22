@@ -64,32 +64,32 @@
 	from {transform: rotate(0deg);}
 	to { transform: rotate(-360deg); }
 }
-.animate-link-rotate{animation: 4s link-rotate linear infinite;}
-@keyframes link-rotate {
-	0%{transform: rotate( 0deg);}
-	5%{transform: rotate(10deg);}
-	10%{transform: rotate(20deg);}
-	15%{transform: rotate(28deg);}
-	20%{transform: rotate(33deg);}
-	25%{transform: rotate(35deg);}
-	30%{transform: rotate(33deg);}
-	35%{transform: rotate(28deg);}
-	40%{transform: rotate(20deg);}
-	45%{transform: rotate(10deg);}
-	50%{transform: rotate( 0deg);}
-	55%{transform: rotate(-10deg);}
-	60%{transform: rotate(-20deg);}
-	65%{transform: rotate(-28deg);}
-	70%{transform: rotate(-33deg);}
-	75%{transform: rotate(-35deg);}
-	80%{transform: rotate(-33deg);}
-	85%{transform: rotate(-28deg);}
-	90%{transform: rotate(-20deg);}
-	95%{transform: rotate(-10deg);}
-	100%{transform: rotate(-0deg);}
+.animate-link{animation: 4s link linear infinite;}
+@keyframes link {
+	0%{transform: rotate( 0deg) translate(0.00vw, -0.00vw); transform-origin: 15.00vw 1.00vw;}
+	5%{transform: rotate(10deg) translate(-1.00vw, -2.47vw); transform-origin: 14.00vw -1.47vw;}
+	10%{transform: rotate(20deg) translate(-3.87vw, -4.70vw); transform-origin: 11.13vw -3.70vw;}
+	15%{transform: rotate(28deg) translate(-8.18vw, -6.47vw); transform-origin: 6.82vw -5.47vw;}
+	20%{transform: rotate(33deg) translate(-13.30vw, -7.61vw); transform-origin: 1.70vw -6.61vw;}
+	25%{transform: rotate(35deg) translate(-18.51vw, -8.00vw); transform-origin: -3.51vw -7.00vw;}
+	30%{transform: rotate(33deg) translate(-23.19vw, -7.61vw); transform-origin: -8.19vw -6.61vw;}
+	35%{transform: rotate(28deg) translate(-26.99vw, -6.47vw); transform-origin: -11.99vw -5.47vw;}
+	40%{transform: rotate(20deg) translate(-29.76vw, -4.70vw); transform-origin: -14.76vw -3.70vw;}
+	45%{transform: rotate(10deg) translate(-31.44vw, -2.47vw); transform-origin: -16.44vw -1.47vw;}
+	50%{transform: rotate( 0deg) translate(-32.00vw, -0.00vw); transform-origin: -17.00vw 1.00vw;}
+	55%{transform: rotate(-10deg) translate(-31.44vw, 2.47vw); transform-origin: -16.44vw 3.47vw;}
+	60%{transform: rotate(-20deg) translate(-29.76vw, 4.70vw); transform-origin: -14.76vw 5.70vw;}
+	65%{transform: rotate(-28deg) translate(-26.99vw, 6.47vw); transform-origin: -11.99vw 7.47vw;}
+	70%{transform: rotate(-33deg) translate(-23.19vw, 7.61vw); transform-origin: -8.19vw 8.61vw;}
+	75%{transform: rotate(-35deg) translate(-18.51vw, 8.00vw); transform-origin: -3.51vw 9.00vw;}
+	80%{transform: rotate(-33deg) translate(-13.30vw, 7.61vw); transform-origin: 1.70vw 8.61vw;}
+	85%{transform: rotate(-28deg) translate(-8.18vw, 6.47vw); transform-origin: 6.82vw 7.47vw;}
+	90%{transform: rotate(-20deg) translate(-3.87vw, 4.70vw); transform-origin: 11.13vw 5.70vw;}
+	95%{transform: rotate(-10deg) translate(-1.00vw, 2.47vw); transform-origin: 14.00vw 3.47vw;}
+	100%{transform: rotate(-0deg) translate(0.00vw, 0.00vw); transform-origin: 15.00vw 1.00vw;}
 }
-.animate-block-translate{animation: 4s blocks-translate linear infinite;}
-@keyframes blocks-translate {
+.animate-blocks{animation: 4s blocks linear infinite;}
+@keyframes blocks {
 	0%{transform: translate(0.00vw);}
 	5%{transform: translate(-1.22vw);}
 	10%{transform: translate(-4.68vw);}
